@@ -15,6 +15,16 @@ echo Installing SystemExplorer..
 SystemExplorerSetup.exe /S
 del SystemExplorerSetup.exe
 
+echo Downloading ParkControl..
+curl -LJO "https://dl.bitsum.com/files/parkcontrolsetup64.exe"
+echo Installing ParkControl..
+parkcontrolsetup64.exe /S
+del parkcontrolsetup64.exe
+
+echo Installing Chrome..
+ChromeSetup.exe
+del ChromeSetup.exe
+
 echo Downloading CMDer..
 curl -LJO "https://github.com/cmderdev/cmder/releases/download/v1.3.18/cmder_mini.zip"
 mkdir cmder
@@ -22,3 +32,5 @@ move cmder_mini.zip cmder
 cd cmder
 tar -xf cmder_mini.zip
 del cmder_mini.zip
+
+
