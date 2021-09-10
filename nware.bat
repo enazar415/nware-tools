@@ -7,6 +7,12 @@ echo Installing Chrome..
 ChromeSetup.exe
 del ChromeSetup.exe
 
+echo Downloading qbittorrent..
+curl -LJ --output qbittorrent_4.3.8_x64_setup.exe "https://www.techspot.com/downloads/downloadnow/5292/?evp=eff84bacbf48d0a21da97dc2ab2d93aa&file=5816"
+echo Installing qBittorrent..
+qbittorrent_4.3.8_x64_setup.exe /S
+del qbittorrent_4.3.8_x64_setup.exe
+
 echo Downloading geany..
 curl -LJO "https://download.geany.org/geany-1.37.1_setup.exe"
 echo Installing geany..
