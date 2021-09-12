@@ -13,11 +13,17 @@ echo Installing qBittorrent..
 qbittorrent_4.3.8_x64_setup.exe /S
 del qbittorrent_4.3.8_x64_setup.exe
 
-echo Downloading geany..
+echo Downloading Geany..
 curl -LJO "https://download.geany.org/geany-1.37.1_setup.exe"
-echo Installing geany..
+echo Installing Geany..
 geany-1.37.1_setup.exe /S
 del geany-1.37.1_setup.exe
+
+echo Downloading Speccy..
+curl -LJO "https://download.ccleaner.com/spsetup132.exe"
+echo Installing Speccy..
+spsetup132.exe /S
+del spsetup132.exe
 
 echo Downloading SystemExplorer..
 curl -LJO "https://systemexplorer.net/download/SystemExplorerSetup.exe"
