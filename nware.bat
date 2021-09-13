@@ -19,6 +19,12 @@ echo Installing Geany..
 geany-1.37.1_setup.exe /S
 del geany-1.37.1_setup.exe
 
+echo Downloading WinRar..
+curl -LJO "https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-602.exe"
+echo Installing WinRar..
+winrar-x64-602.exe /S
+del winrar-x64-602.exe
+
 echo Downloading Speccy..
 curl -LJO "https://download.ccleaner.com/spsetup132.exe"
 echo Installing Speccy..
