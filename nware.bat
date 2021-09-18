@@ -34,8 +34,8 @@ del spsetup132.exe
 echo Downloading AutoHotKey..
 curl -LJO "https://www.autohotkey.com/download/ahk-install.exe"
 echo Installing AutoHotKey..
-ahk-install.exe /S
-del ahk-install.exe
+AutoHotkey_1.1.33.10_setup.exe /S
+del AutoHotkey_1.1.33.10_setup.exe
 
 echo Downloading SystemExplorer..
 curl -LJO "https://systemexplorer.net/download/SystemExplorerSetup.exe"
