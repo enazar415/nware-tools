@@ -31,12 +31,6 @@ echo Installing Speccy..
 spsetup132.exe /S
 del spsetup132.exe
 
-echo Downloading AutoHotKey..
-curl -LJO "https://www.autohotkey.com/download/ahk-install.exe"
-echo Installing AutoHotKey..
-AutoHotkey_1.1.33.10_setup.exe /S
-del AutoHotkey_1.1.33.10_setup.exe
-
 echo Downloading SystemExplorer..
 curl -LJO "https://systemexplorer.net/download/SystemExplorerSetup.exe"
 echo Installing SystemExplorer..
