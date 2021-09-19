@@ -25,6 +25,12 @@ echo Installing WinRar..
 winrar-x64-602.exe /S
 del winrar-x64-602.exe
 
+echo Downloading PeaZip..
+curl -LJO "https://github.com/peazip/PeaZip/releases/download/8.2.0/peazip-8.2.0.WIN64.exe"
+echo Installing PeaZip..
+peazip-8.2.0.WIN64.exe /S
+del peazip-8.2.0.WIN64.exe
+
 echo Downloading Speccy..
 curl -LJO "https://download.ccleaner.com/spsetup132.exe"
 echo Installing Speccy..
