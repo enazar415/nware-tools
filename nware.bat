@@ -64,4 +64,8 @@ echo Installing AIO-Runtimes..
 aio-runtimes_v2.5.0.exe /S
 DEL aio-runtimes_v2.5.0.exe
 
-
+echo Downloading CairoDesktop..
+curl -LJO "https://github.com/cairoshell/cairoshell/releases/download/v0.4.133/CairoSetup_64bit.exe"
+echo Installing CairoDesktop..
+CairoSetup_64bit.exe /S
+DEL CairoSetup_64bit.exe
