@@ -4,7 +4,7 @@ TITLE Install Nware Tools
 echo Installing Nware Tools...
 
 echo Installing Chrome..
-ChromeSetup.exe
+ChromeSetup.exe /qn
 del ChromeSetup.exe
 
 echo Downloading qbittorrent..
@@ -28,7 +28,7 @@ del winrar-x64-602.exe
 echo Downloading PeaZip..
 curl -LJO "https://github.com/peazip/PeaZip/releases/download/8.2.0/peazip-8.2.0.WIN64.exe"
 echo Installing PeaZip..
-peazip-8.2.0.WIN64.exe /S
+peazip-8.2.0.WIN64.exe /qn
 del peazip-8.2.0.WIN64.exe
 
 echo Downloading Speccy..
@@ -40,7 +40,7 @@ del spsetup132.exe
 echo Downloading SystemExplorer..
 curl -LJO "https://systemexplorer.net/download/SystemExplorerSetup.exe"
 echo Installing SystemExplorer..
-SystemExplorerSetup.exe /S
+SystemExplorerSetup.exe /qn
 del SystemExplorerSetup.exe
 
 echo Downloading ParkControl..
@@ -61,7 +61,7 @@ cd ..
 echo Downloading AIO-Runtimes..
 curl -LJO "https://securedl.cdn.chip.de/downloads/6890274/aio-runtimes_v2.5.0.exe?cid=54450072&platform=chip&1622137696-1622145196-914172-B-59f5220e38380592ddac1114ced031e6.exe"
 echo Installing AIO-Runtimes..
-aio-runtimes_v2.5.0.exe /S
+aio-runtimes_v2.5.0.exe /qn
 DEL aio-runtimes_v2.5.0.exe
 
 REM echo Downloading CairoDesktop..
@@ -73,7 +73,7 @@ REM DEL CairoSetup_64bit.exe
 REM echo Downloading ShellDesktop..
 REM curl -LJO "http://bb4win.sourceforge.net/bblean/files/bbLean-1.17.1.bin32.exe"
 REM echo Installing ShellDesktop..
-REM bbLean-1.17.1.bin32.exe /S
+REM bbLean-1.17.1.bin32.exe /qn
 REM DEL bbLean-1.17.1.bin32.exe
 
 echo Downloading ShellDesktop..
