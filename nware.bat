@@ -69,9 +69,3 @@ curl -LJO "https://github.com/cairoshell/cairoshell/releases/download/v0.4.133/C
 echo Installing CairoDesktop..
 CairoSetup_64bit.exe /S
 DEL CairoSetup_64bit.exe
-
-echo Downloading ShellDesktop..
-curl -LJO "http://bb4win.sourceforge.net/bblean/files/bbLean-1.17.1.bin32.exe"
-echo Installing ShellDesktop..
-bbLean-1.17.1.bin32.exe /qn
-DEL bbLean-1.17.1.bin32.exe
