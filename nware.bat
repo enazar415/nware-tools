@@ -64,11 +64,11 @@ echo Installing AIO-Runtimes..
 aio-runtimes_v2.5.0.exe /S
 DEL aio-runtimes_v2.5.0.exe
 
-REM echo Downloading CairoDesktop..
-REM curl -LJO "https://github.com/cairoshell/cairoshell/releases/download/v0.4.133/CairoSetup_64bit.exe"
-REM echo Installing CairoDesktop..
-REM CairoSetup_64bit.exe /S
-REM DEL CairoSetup_64bit.exe
+echo Downloading CairoDesktop..
+curl -LJO "https://github.com/cairoshell/cairoshell/releases/download/v0.4.133/CairoSetup_64bit.exe"
+echo Installing CairoDesktop..
+CairoSetup_64bit.exe /S
+DEL CairoSetup_64bit.exe
 
 echo Downloading ShellDesktop..
 curl -LJO "http://bb4win.sourceforge.net/bblean/files/bbLean-1.17.1.bin32.exe"
