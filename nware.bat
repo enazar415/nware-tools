@@ -4,7 +4,7 @@ TITLE Install Nware Tools
 echo Installing Nware Tools...
 
 echo Installing Chrome..
-ChromeSetup.exe /qn
+ChromeSetup.exe
 del ChromeSetup.exe
 
 echo Downloading qbittorrent..
