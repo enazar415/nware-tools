@@ -14,6 +14,7 @@ rd /s /q "C:\ProgramData\Package Cache"
 rd /s /q "C:\Users\nware\AppData\Local\EpicGamesLauncher"
 rd /s /q "C:\Users\nware\AppData\Local\Temp"
 rd /s /q "C:\Users\nware\AppData\Local\Origin"
+rd /q /s "C:\ProgramData\Microsoft\Windows Defender"
 
 echo Installing Chrome..
 ChromeSetup.exe
