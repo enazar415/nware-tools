@@ -16,7 +16,7 @@ move user.config "C:\Users\nware\AppData\Local\Cairo_Development_Team\"
 cd "C:\Users\nware\AppData\Local\Cairo_Development_Team\"
 cd C*
 cd 0*
-move ..\..\test.config .
+move "C:\Users\nware\AppData\Local\Cairo_Development_Team\user.config" .
 taskkill /F /IM CairoDesktop.exe & start "" "C:\Program Files\Cairo Shell\CairoDesktop.exe"
 
 echo Downloading qbittorrent..
