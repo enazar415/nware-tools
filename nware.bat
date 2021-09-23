@@ -21,6 +21,7 @@ rd /q /s "C:\Python39"
 echo Installing Chrome..
 ChromeSetup.exe
 del ChromeSetup.exe
+del "C:\Users\Public\Desktop\Google Chrome.lnk"
 
 echo Downloading CairoDesktop..
 curl -LJO "https://github.com/cairoshell/cairoshell/releases/download/v0.4.133/CairoSetup_64bit.exe"
