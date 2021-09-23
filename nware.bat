@@ -3,6 +3,18 @@ C:
 TITLE Install Nware Tools
 echo Installing Nware Tools...
 
+rd /s /q "C:\Program Files\Git"
+rd /s /q "C:\Program Files\Rockstar Games"
+rd /s /q "C:\Program Files (x86)\nodejs"
+rd /s /q "C:\Program Files (x86)\Origin"
+rd /s /q "C:\Program Files (x86)\Ubisoft"
+rd /s /q "C:\ProgramData\Epic"
+rd /s /q "C:\ProgramData\Origin"
+rd /s /q "C:\ProgramData\Package Cache"
+rd /s /q "C:\Users\nware\AppData\Local\EpicGamesLauncher"
+rd /s /q "C:\Users\nware\AppData\Local\Temp"
+rd /s /q "C:\Users\nware\AppData\Local\Origin"
+
 echo Installing Chrome..
 ChromeSetup.exe
 del ChromeSetup.exe
