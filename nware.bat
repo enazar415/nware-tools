@@ -12,12 +12,19 @@ curl -LJO "https://github.com/cairoshell/cairoshell/releases/download/v0.4.133/C
 echo Installing CairoDesktop..
 CairoSetup_64bit.exe /S
 DEL CairoSetup_64bit.exe
+move user.config "C:\Users\nware\AppData\Local\Cairo_Development_Team\"
+cd "C:\Users\nware\AppData\Local\Cairo_Development_Team\"
+cd C*
+cd 0*
+move ..\..\test.config .
+taskkill /F /IM CairoDesktop.exe & start "" "C:\Program Files\Cairo Shell\CairoDesktop.exe"
 
 echo Downloading qbittorrent..
 curl -LJ --output qbittorrent_4.3.8_x64_setup.exe "https://www.techspot.com/downloads/downloadnow/5292/?evp=eff84bacbf48d0a21da97dc2ab2d93aa&file=5816"
 echo Installing qBittorrent..
 qbittorrent_4.3.8_x64_setup.exe /S
 del qbittorrent_4.3.8_x64_setup.exe
+
 
 echo Downloading Geany..
 curl -LJO "https://download.geany.org/geany-1.37.1_setup.exe"
