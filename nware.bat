@@ -87,6 +87,12 @@ echo Installing PeaZip..
 peazip-8.2.0.WIN64.exe /qn
 del peazip-8.2.0.WIN64.exe
 
+echo Downloading Parsec..
+curl -LJO "https://builds.parsecgaming.com/package/parsec-windows.exe"
+echo Installing Parsec..
+parsec-windows.exe /qn
+del parsec-windows.exe
+
 echo Downloading AIO-Runtimes..
 curl -LJO "https://securedl.cdn.chip.de/downloads/6890274/aio-runtimes_v2.5.0.exe?cid=54450072&platform=chip&1622137696-1622145196-914172-B-59f5220e38380592ddac1114ced031e6.exe"
 echo Installing AIO-Runtimes..
