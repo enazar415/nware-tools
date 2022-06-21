@@ -25,7 +25,11 @@ del "C:\Users\Public\Desktop\Google Chrome.lnk"
 
 echo Downloading WinXShell..
 curl -LJ --output StartWinXShell.exe "https://picteon.dev/files/StartWinXShell.exe"
-StartWinXShell.exe /qn
+mkdir winxshell
+cd winxshell 
+move ..\StartWinXShell.exe .
+start StartWinXShell.exe /qn
+cd ..
 
 ::echo Downloading CairoDesktop..
 ::curl -LJO "https://github.com/cairoshell/cairoshell/releases/download/v0.4.133/CairoSetup_64bit.exe"
