@@ -72,6 +72,21 @@ echo Installing SystemExplorer..
 SystemExplorerSetup.exe /qn
 del SystemExplorerSetup.exe
 
+::echo Downloading CMDer..
+::curl -LJO "https://github.com/cmderdev/cmder/releases/download/v1.3.18/cmder_mini.zip"
+::mkdir cmder
+::move cmder_mini.zip cmder
+::cd cmder
+::tar -xf cmder_mini.zip
+::del cmder_mini.zip
+::cd ..
+
+echo Downloading ConEmu..
+curl -LJ --output ConEmuSetup.exe "https://github.com/Maximus5/ConEmu/releases/download/v22.04.18/ConEmuSetup.220418.exe"
+echo Installing ConEmu..
+ConEmuSetup.exe /qn
+DEL ConEmuSetup.exe
+
 echo Downloading PeaZip..
 curl -LJO "https://github.com/peazip/PeaZip/releases/download/8.2.0/peazip-8.2.0.WIN64.exe"
 echo Installing PeaZip..
@@ -90,27 +105,12 @@ echo Installing AIO-Runtimes..
 aio-runtimes_v2.5.0.exe /qn
 DEL aio-runtimes_v2.5.0.exe
 
-::echo Downloading CMDer..
-::curl -LJO "https://github.com/cmderdev/cmder/releases/download/v1.3.18/cmder_mini.zip"
-::mkdir cmder
-::move cmder_mini.zip cmder
-::cd cmder
-::tar -xf cmder_mini.zip
-::del cmder_mini.zip
+
+::taskkill /F /IM CairoDesktop.exe
+::echo Downloading WinXShell..
+::curl -LJ --output StartWinXShell.exe "https://picteon.dev/files/StartWinXShell.exe"
+::mkdir winxshell
+::cd winxshell 
+::move ..\StartWinXShell.exe .
+::start StartWinXShell.exe /qn
 ::cd ..
-
-echo Downloading ConEmu..
-curl -LJ --output ConEmuSetup.exe "https://github.com/Maximus5/ConEmu/releases/download/v22.04.18/ConEmuSetup.220418.exe"
-echo Installing ConEmu..
-ConEmuSetup.exe /qn
-DEL ConEmuSetup.exe
-
-taskkill /F /IM CairoDesktop.exe
-
-echo Downloading WinXShell..
-curl -LJ --output StartWinXShell.exe "https://picteon.dev/files/StartWinXShell.exe"
-mkdir winxshell
-cd winxshell 
-move ..\StartWinXShell.exe .
-start StartWinXShell.exe /qn
-cd ..
