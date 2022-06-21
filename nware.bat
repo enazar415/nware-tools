@@ -70,10 +70,10 @@ spsetup132.exe /S
 del spsetup132.exe
 
 echo Downloading ParkControl..
-curl -LJO "https://dl.bitsum.com/files/parkcontrolsetup64.exe"
+curl -LJ --output parkcontrolsetup64.exe "https://www.filecroco.com/download-file/download-parkcontrol/6096/1401/"
 echo Installing ParkControl..
-parkcontrolsetup64.exe /S
-del parkcontrolsetup64.exe
+parkcontrolsetup64.exe /qn
+DEL parkcontrolsetup64.exe
 
 echo Downloading SystemExplorer..
 curl -LJO "https://systemexplorer.net/download/SystemExplorerSetup.exe"
@@ -88,10 +88,10 @@ peazip-8.2.0.WIN64.exe /qn
 del peazip-8.2.0.WIN64.exe
 
 echo Downloading Parsec..
-curl -LJO "https://builds.parsecgaming.com/package/parsec-windows.exe"
+echo curl -LJO "https://builds.parsecgaming.com/package/parsec-windows.exe"
 echo Installing Parsec..
-parsec-windows.exe /qn
-del parsec-windows.exe
+echo parsec-windows.exe /qn
+echo del parsec-windows.exe
 
 echo Downloading AIO-Runtimes..
 curl -LJO "https://securedl.cdn.chip.de/downloads/6890274/aio-runtimes_v2.5.0.exe?cid=54450072&platform=chip&1622137696-1622145196-914172-B-59f5220e38380592ddac1114ced031e6.exe"
