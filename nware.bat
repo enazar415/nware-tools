@@ -23,19 +23,11 @@ ChromeSetup.exe
 del ChromeSetup.exe
 del "C:\Users\Public\Desktop\Google Chrome.lnk"
 
-echo Downloading WinXShell..
-curl -LJ --output StartWinXShell.exe "https://picteon.dev/files/StartWinXShell.exe"
-mkdir winxshell
-cd winxshell 
-move ..\StartWinXShell.exe .
-start StartWinXShell.exe /qn
-cd ..
-
-::echo Downloading CairoDesktop..
-::curl -LJO "https://github.com/cairoshell/cairoshell/releases/download/v0.4.133/CairoSetup_64bit.exe"
-::echo Installing CairoDesktop..
-::CairoSetup_64bit.exe /S
-::DEL CairoSetup_64bit.exe
+echo Downloading CairoDesktop..
+curl -LJO "https://github.com/cairoshell/cairoshell/releases/download/v0.4.133/CairoSetup_64bit.exe"
+echo Installing CairoDesktop..
+CairoSetup_64bit.exe /S
+DEL CairoSetup_64bit.exe
 
 echo Downloading qbittorrent..
 curl -LJ --output qbittorrent_4.3.8_x64_setup.exe "https://www.techspot.com/downloads/downloadnow/5292/?evp=eff84bacbf48d0a21da97dc2ab2d93aa&file=5816"
@@ -43,12 +35,12 @@ echo Installing qBittorrent..
 qbittorrent_4.3.8_x64_setup.exe /S
 del qbittorrent_4.3.8_x64_setup.exe
 
-::move user.config "C:\Users\nware\AppData\Local\Cairo_Development_Team\"
-::cd "C:\Users\nware\AppData\Local\Cairo_Development_Team\"
-::cd C*
-::cd 0*
-::move "C:\Users\nware\AppData\Local\Cairo_Development_Team\user.config" .
-::taskkill /F /IM CairoDesktop.exe & start "" "C:\Program Files\Cairo Shell\CairoDesktop.exe"
+move user.config "C:\Users\nware\AppData\Local\Cairo_Development_Team\"
+cd "C:\Users\nware\AppData\Local\Cairo_Development_Team\"
+cd C*
+cd 0*
+move "C:\Users\nware\AppData\Local\Cairo_Development_Team\user.config" .
+taskkill /F /IM CairoDesktop.exe & start "" "C:\Program Files\Cairo Shell\CairoDesktop.exe"
 
 echo Downloading Geany..
 curl -LJO "https://download.geany.org/geany-1.37.1_setup.exe"
@@ -61,15 +53,6 @@ curl -LJO "https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-6
 echo Installing WinRar..
 winrar-x64-602.exe /S
 del winrar-x64-602.exe
-
-::echo Downloading CMDer..
-::curl -LJO "https://github.com/cmderdev/cmder/releases/download/v1.3.18/cmder_mini.zip"
-::mkdir cmder
-::move cmder_mini.zip cmder
-::cd cmder
-::tar -xf cmder_mini.zip
-::del cmder_mini.zip
-::cd ..
 
 echo Downloading Speccy..
 curl -LJO "https://download.ccleaner.com/spsetup132.exe"
@@ -106,3 +89,28 @@ curl -LJO "https://securedl.cdn.chip.de/downloads/6890274/aio-runtimes_v2.5.0.ex
 echo Installing AIO-Runtimes..
 aio-runtimes_v2.5.0.exe /qn
 DEL aio-runtimes_v2.5.0.exe
+
+::echo Downloading CMDer..
+::curl -LJO "https://github.com/cmderdev/cmder/releases/download/v1.3.18/cmder_mini.zip"
+::mkdir cmder
+::move cmder_mini.zip cmder
+::cd cmder
+::tar -xf cmder_mini.zip
+::del cmder_mini.zip
+::cd ..
+
+echo Downloading ConEmu..
+curl -LJ --output ConEmuSetup.exe "https://github.com/Maximus5/ConEmu/releases/download/v22.04.18/ConEmuSetup.220418.exe"
+echo Installing ConEmu..
+ConEmuSetup.exe /qn
+DEL ConEmuSetup.exe
+
+taskkill /F /IM CairoDesktop.exe
+
+echo Downloading WinXShell..
+curl -LJ --output StartWinXShell.exe "https://picteon.dev/files/StartWinXShell.exe"
+mkdir winxshell
+cd winxshell 
+move ..\StartWinXShell.exe .
+start StartWinXShell.exe /qn
+cd ..
